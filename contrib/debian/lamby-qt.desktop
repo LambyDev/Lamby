@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name=lamby
+Comment=lamby P2P Cryptocurrency
+Exec=lamby-qt %u
+Terminal=false
+Type=Application
+Icon=lamby128
+MimeType=x-scheme-handler/lamby;
+Categories=Office;Finance;
+StartupWMClass=lamby-qt
+Name[en_IN]=lamby-qt.desktop

@@ -1,0 +1,3 @@
+usr/local/bin/lambyd usr/bin
+usr/local/bin/lamby-cli usr/bin
+debian/examples/lamby.conf etc/lamby

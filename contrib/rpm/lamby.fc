@@ -1,0 +1,8 @@
+/usr/bin/lamby-cli		--	gen_context(system_u:object_r:lamby_exec_t,s0)
+/usr/sbin/lambyd		--	gen_context(system_u:object_r:lamby_exec_t,s0)
+/usr/lib(64)?/lamby/lambyd		--	gen_context(system_u:object_r:lamby_exec_t,s0)
+
+/etc/lamby(/.*)?		gen_context(system_u:object_r:lamby_conf_t,s0)
+/var/lib/lamby(/.*)?		gen_context(system_u:object_r:lamby_var_lib_t,s0)
+
+(/var)?/run/lambyd(/.*)?   gen_context(system_u:object_r:lamby_var_run_t,s0)

@@ -1,0 +1,6 @@
+usr/local/bin/lamby-qt usr/bin
+share/pixmaps/lamby32.xpm usr/share/pixmaps
+share/pixmaps/lamby16.xpm usr/share/pixmaps
+share/pixmaps/lamby128.png usr/share/pixmaps
+debian/lamby-qt.desktop usr/share/applications
+debian/lamby-qt.protocol usr/share/kde4/services/

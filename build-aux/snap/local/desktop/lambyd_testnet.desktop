@@ -1,0 +1,16 @@
+# http://standards.freedesktop.org/desktop-entry-spec/desktop-entry-spec-1.0.html
+
+[Desktop Entry]
+Encoding=UTF-8
+Name=Lamby_Coin Daemon SNAP
+Comment=testnet
+GenericName=Lamby_Coin Digital Currency Daemon Client testnet network
+Exec=lamby_coin-core.daemon-testnet %u
+Terminal=true
+Type=Application
+Icon=${SNAP}/share/pixmaps/lamby_coin_testnet.png
+MimeType=x-scheme-handler/lamby;
+Categories=X-Office;X-Finance;
+Keywords=internet;lamby_coin;zlamby;core;wallet;daemon;testnet;snap;launchpad;crypto;digital;currency;coin;token;zerocoin;
+Version=1.0
+Name[en_IN]=lambyd_testnet.desktop

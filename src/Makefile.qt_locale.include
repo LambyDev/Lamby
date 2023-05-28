@@ -1,0 +1,14 @@
+QT_TS = \
+  qt/locale/lamby_de.ts \
+  qt/locale/lamby_en.ts \
+  qt/locale/lamby_en_US.ts \
+  qt/locale/lamby_es.ts \
+  qt/locale/lamby_fr_FR.ts \
+  qt/locale/lamby_hr_HR.ts \
+  qt/locale/lamby_it.ts \
+  qt/locale/lamby_ko_KR.ts \
+  qt/locale/lamby_nl.ts \
+  qt/locale/lamby_pl.ts \
+  qt/locale/lamby_ru.ts \
+  qt/locale/lamby_tr.ts \
+  qt/locale/lamby_zh_CN.ts
