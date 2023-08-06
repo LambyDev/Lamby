@@ -59,14 +59,14 @@ static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, const char* ps
  * + Contains no strange transactions
  */
 static Checkpoints::MapCheckpoints mapCheckpoints =
-    boost::assign::map_list_of(0, uint256S("7d8af8a2e3bf3347a4aa29ba48de0ab0ebe8e7324117b073d46da7e37a15bc7d"))/*
+    boost::assign::map_list_of(0, uint256S("690a8dabee077a8638b9f414efb2865ad1431ec4fc61b4f868a2dd91f94695a2"))/*
 	(1000, uint256S("0x0000006b43065fdf445f07adca57fe5fd888902cb79c16fa48302cf1c0ab88ce"))
 	(10000, uint256S("0xa2fd284213d913463d827c166ed0220b30de857794956b9dfbaaa5395891ef32"))
 	(20000, uint256S("0x85acbdc4e8b609ddb3584c15f94248cc08d85c337736c12422f3e84a5bc51c4a"))*/;
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1611351525, // * UNIX timestamp of last checkpoint block
+    1691139277, // * UNIX timestamp of last checkpoint block
     0,          // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
@@ -98,10 +98,10 @@ public:
         networkID = CBaseChainParams::MAIN;
         strNetworkID = "main";
 
-        genesis = CreateGenesisBlock(1685297777, 2419983, "Erdogan maintains lead in latest official vote tally");
+        genesis = CreateGenesisBlock(1691139277, 230653, "India restricts laptop, PC imports to boost local manufacturing - CNN");
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(genesis.hashMerkleRoot == uint256("41e5faa3349648ab1594ed47811af18f0b31c8b98f5199278571375164bb441a"));
-        assert(consensus.hashGenesisBlock == uint256("7d8af8a2e3bf3347a4aa29ba48de0ab0ebe8e7324117b073d46da7e37a15bc7d"));
+        assert(genesis.hashMerkleRoot == uint256("aa5381d9eb9151197118fc5c70627a820f04dd58f6cdf5a4944ece3963e430eb"));
+        assert(consensus.hashGenesisBlock == uint256("690a8dabee077a8638b9f414efb2865ad1431ec4fc61b4f868a2dd91f94695a2"));
 
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.powLimit   = ~UINT256_ZERO >> 18;   // lamby starting difficulty is 1 / 2^12
@@ -154,11 +154,11 @@ public:
         pchMessageStart[3] = 0x2d;
         nDefaultPort = 8989;
 
-        vSeeds.push_back(CDNSSeedData("162.33.177.118", "162.33.177.118"));
-        vSeeds.push_back(CDNSSeedData("193.149.185.206", "193.149.185.206"));
-        vSeeds.push_back(CDNSSeedData("45.61.138.62", "45.61.138.62"));
-        vSeeds.push_back(CDNSSeedData("45.61.136.228", "45.61.136.228"));
-        vSeeds.push_back(CDNSSeedData("172.86.75.50", "172.86.75.50"));
+        vSeeds.push_back(CDNSSeedData("195.85.114.190", "195.85.114.190"));
+        vSeeds.push_back(CDNSSeedData("206.71.149.79", "206.71.149.79"));
+        vSeeds.push_back(CDNSSeedData("162.33.177.70", "162.33.177.70"));
+        vSeeds.push_back(CDNSSeedData("64.52.80.93", "64.52.80.93"));
+        vSeeds.push_back(CDNSSeedData("206.71.148.83", "206.71.148.83"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
 
