@@ -26,7 +26,7 @@
 </tr>
 <tr>
 <td>Maximum Supply</td>
-<td>5.000.000.000</td>
+<td>2.500.000.000</td>
 </tr>
 <tr>
 <td>Coin Maturity</td>
