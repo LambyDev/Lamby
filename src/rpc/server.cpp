@@ -414,6 +414,7 @@ static const CRPCCommand vRPCCommands[] =
         {"wallet", "sethdseed", &sethdseed, true, false, true},
         {"wallet", "getaddressinfo", &getaddressinfo, true, false, true},
         {"wallet", "getnewaddress", &getnewaddress, true, false, true},
+        {"wallet", "getburnaddress", &getburnaddress, true, false, true},
         //{"wallet", "getnewstakingaddress", &getnewstakingaddress, true, false, true},
         {"wallet", "getrawchangeaddress", &getrawchangeaddress, true, false, true},
         {"wallet", "getreceivedbyaccount", &getreceivedbyaccount, false, false, true},

@@ -103,6 +103,7 @@ struct Params {
     int64_t nTargetSpacing;
     int nTimeSlotLength;
     std::string devAddress;
+    std::string burnAddress;
 
     // spork keys
     std::string strSporkPubKey;

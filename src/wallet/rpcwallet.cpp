@@ -30,7 +30,6 @@
 #include <univalue.h>
 #include <iostream>
 
-
 int64_t nWalletUnlockTime;
 static RecursiveMutex cs_nWalletUnlockTime;
 
@@ -388,6 +387,26 @@ UniValue getnewstakingaddress(const UniValue& params, bool fHelp)
             HelpExampleCli("getnewstakingaddress", "") + HelpExampleRpc("getnewstakingaddress", ""));
 
     return EncodeDestination(GetNewAddressFromAccount("coldstaking", params, CChainParams::STAKING_ADDRESS), CChainParams::STAKING_ADDRESS);
+}
+
+UniValue getburnaddress(const UniValue& params, bool fHelp)
+{
+    if (fHelp || params.size() > 0)
+        throw std::runtime_error(
+            "getburnaddress\n"
+            "\nReturns the burn address for sending coins to be permanently removed from circulation.\n"
+            "\nResult:\n"
+            "\"burnaddress\"    (string) The burn address\n"
+            "\nExamples:\n" +
+            HelpExampleCli("getburnaddress", "") + HelpExampleRpc("getburnaddress", ""));
+
+    std::string burnAddress = Params().GetConsensus().burnAddress;
+
+    if (!IsValidDestinationString(burnAddress)) {
+        throw std::runtime_error("The retrieved burn address is not valid.");
+    }
+
+    return UniValue(burnAddress);
 }
 
 UniValue delegatoradd(const UniValue& params, bool fHelp)

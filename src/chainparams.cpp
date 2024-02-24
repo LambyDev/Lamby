@@ -122,7 +122,7 @@ public:
         consensus.nTargetTimespanV2 = 30 * 60;
         consensus.nTargetSpacing = 1 * 60;          // lamby blocktime 60 seconds
         consensus.nTimeSlotLength = 15;
-        consensus.devAddress = "LambydisabledXXXXXXXXXXXXXXXXXXXXXX";
+        consensus.burnAddress = "CXxxxBurnLambyxxxxxxxxxxxxxx3rujzu"; // it would take 3.3 decillion years to find the private-key
 				
         // spork key
         consensus.strSporkPubKey = "04638c049e470eee6fc99c6398018b183c21c4058e067be44ce88ae1f5d20519e11070a23101625050e4a159f1cff2c6d18218a0076b191e14b9c27df1c199cc6f";
