@@ -154,11 +154,9 @@ public:
         pchMessageStart[3] = 0x2d;
         nDefaultPort = 8989;
 
-        vSeeds.push_back(CDNSSeedData("195.85.114.190", "195.85.114.190"));
-        vSeeds.push_back(CDNSSeedData("206.71.149.79", "206.71.149.79"));
-        vSeeds.push_back(CDNSSeedData("162.33.177.70", "162.33.177.70"));
-        vSeeds.push_back(CDNSSeedData("64.52.80.93", "64.52.80.93"));
-        vSeeds.push_back(CDNSSeedData("206.71.148.83", "206.71.148.83"));
+        vSeeds.push_back(CDNSSeedData("206.71.148.100", "206.71.148.100"));
+        vSeeds.push_back(CDNSSeedData("67.217.228.133", "67.217.228.133"));
+        vSeeds.push_back(CDNSSeedData("193.149.180.209", "193.149.180.209"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
 
