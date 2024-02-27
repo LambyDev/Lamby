@@ -59,10 +59,11 @@ static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, const char* ps
  * + Contains no strange transactions
  */
 static Checkpoints::MapCheckpoints mapCheckpoints =
-    boost::assign::map_list_of(0, uint256S("690a8dabee077a8638b9f414efb2865ad1431ec4fc61b4f868a2dd91f94695a2"))/*
-	(1000, uint256S("0x0000006b43065fdf445f07adca57fe5fd888902cb79c16fa48302cf1c0ab88ce"))
-	(10000, uint256S("0xa2fd284213d913463d827c166ed0220b30de857794956b9dfbaaa5395891ef32"))
-	(20000, uint256S("0x85acbdc4e8b609ddb3584c15f94248cc08d85c337736c12422f3e84a5bc51c4a"))*/;
+    boost::assign::map_list_of(0, uint256S("690a8dabee077a8638b9f414efb2865ad1431ec4fc61b4f868a2dd91f94695a2"))
+	(1000, uint256S("0xe6bb1f15f75c26a01fee6c8f661fa64d216b16bab517bd4455f036fc955967e5"))
+	(10000, uint256S("0xa91e4aa33fb46c73808f4f7b26940a3f2f7ce77a2a627b9ac8685baefe2abb8f"))
+	(50000, uint256S("0xb1ae13fb28a41c9616a843462b67663a8241f736a016a0e22958a5fe0c89b22f"))
+    (246600, uint256S("0xb8e8d2ff426d85c26efb5e4357bbadc5afe9a89381a2741ad8052225873da757"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
